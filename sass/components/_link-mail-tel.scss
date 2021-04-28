@@ -1,0 +1,73 @@
+.link__mail,
+.link__tel {
+  display: flex;
+  min-width: 142px;
+  align-items: center;
+  transition: var(--animation);
+}
+
+.link__mail:hover .link__mail-icons,
+.link__mail:focus .link__mail-icons {
+  fill: var(--accent-color);
+  transition: var(--animation);
+}
+
+.link__tel:focus .link__mail-icons,
+.link__tel:hover .link__mail-icons {
+  fill: var(--accent-color);
+  transition: var(--animation);
+}
+
+.link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  background: var(--accent-color);
+
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -28px;
+  left: 0;
+}
+
+.link__current {
+  color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link__mail:hover,
+.link__mail:focus {
+  color: var(--accent-color);
+}
+
+.link__tel:focus,
+.link__tel:hover {
+  color: var(--accent-color);
+}
+
+.link__mail,
+.link__tel {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
