@@ -219,6 +219,112 @@ a {
   padding-right: 15px;
 }
 
+.header__container {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* logo */
+.nav__logo {
+  display: flex;
+  margin-right: 93px;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo {
+  color: #000000;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__item {
+  color: var(--accent-color);
+}
+
+.link__mail,
+.link__tel {
+  display: flex;
+  min-width: 142px;
+  align-items: center;
+  transition: var(--animation);
+}
+
+.link__mail:hover .link__mail-icons,
+.link__mail:focus .link__mail-icons {
+  fill: var(--accent-color);
+  transition: var(--animation);
+}
+
+.link__tel:focus .link__mail-icons,
+.link__tel:hover .link__mail-icons {
+  fill: var(--accent-color);
+  transition: var(--animation);
+}
+
+.link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  background: var(--accent-color);
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -28px;
+  left: 0;
+}
+
+.link__current {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link__mail:hover,
+.link__mail:focus {
+  color: var(--accent-color);
+}
+
+.link__tel:focus,
+.link__tel:hover {
+  color: var(--accent-color);
+}
+
+.link__mail,
+.link__tel {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 /* button */
 .list__button {
   display: inline-block;
@@ -298,41 +404,6 @@ a {
   margin-right: 331px;
 }
 
-.header__container {
-  justify-content: flex-end;
-  display: flex;
-  align-items: center;
-}
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
-}
-
-/* logo */
-.nav__logo {
-  display: flex;
-  margin-right: 93px;
-  font-family: Raleway, cursive;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.logo {
-  color: #000000;
-  font-family: Raleway, cursive;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo__item {
-  color: var(--accent-color);
-}
-
 /* site-nav */
 .navigation {
   display: flex;
@@ -361,77 +432,6 @@ a {
 
 .site-nav {
   display: inline-flex;
-}
-
-.link__mail,
-.link__tel {
-  display: flex;
-  min-width: 142px;
-  align-items: center;
-  transition: var(--animation);
-}
-
-.link__mail:hover .link__mail-icons,
-.link__mail:focus .link__mail-icons {
-  fill: var(--accent-color);
-  transition: var(--animation);
-}
-
-.link__tel:focus .link__mail-icons,
-.link__tel:hover .link__mail-icons {
-  fill: var(--accent-color);
-  transition: var(--animation);
-}
-
-.link {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
-.current::after {
-  content: '';
-  background: var(--accent-color);
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom: -28px;
-  left: 0;
-}
-
-.link__current {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.link__mail:hover,
-.link__mail:focus {
-  color: var(--accent-color);
-}
-
-.link__tel:focus,
-.link__tel:hover {
-  color: var(--accent-color);
-}
-
-.link__mail,
-.link__tel {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 /* our projects */
@@ -729,11 +729,4 @@ img {
 .subscribe__icons {
   margin-left: 10px;
 }
-
-/* черный дополнительны цвет  #757575;*/
-/* черный основной цвет #212121;*/
-/* цвет фона кнопок #F5F4FA; */
-/* акцент #2196F3; */
-/* белый  #FFFFFF; */
-/* белый вторичный #E5E5E5 */
 /*# sourceMappingURL=styles.css.map */
