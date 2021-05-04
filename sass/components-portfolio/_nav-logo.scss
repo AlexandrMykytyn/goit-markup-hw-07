@@ -18,8 +18,8 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.logo__item {
-  color: var(--accent-color);
+  &__item {
+    color: var(--accent-color);
+  }
 }

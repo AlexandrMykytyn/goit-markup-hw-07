@@ -6,6 +6,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
   min-height: 252px;
+
+  & .social-icons__link:focus,
+  & .social-icons__link:hover {
+    background-color: #2196f3;
+  }
+
+  & .social-icons__icon {
+    fill: #ffffff;
+  }
+
+  & .social-icons__link {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .footer__container {
@@ -27,6 +40,17 @@
   margin-top: 9px;
 
   transition: var(--animation);
+
+  &:hover,
+  &:hover {
+    color: #2196f3;
+  }
+
+  &:focus,
+  &:focus {
+    color: #2196f3;
+    transition: var(--animation);
+  }
 }
 
 .footer__social {
@@ -45,39 +69,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
 
-.join__list {
-  display: flex;
-  padding-bottom: 0px;
+  &__list {
+    display: flex;
+    padding-bottom: 0px;
+  }
 }
 
 .footer__address {
   display: block;
   width: 231px;
   margin-right: 70px;
-}
-
-.footer .social-icons__link:focus,
-.footer .social-icons__link:hover {
-  background-color: #2196f3;
-}
-
-.footer .social-icons__icon {
-  fill: #ffffff;
-}
-
-.footer .social-icons__link {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.footer__mail:hover,
-.footer__tel:hover {
-  color: #2196f3;
-}
-
-.footer__mail:focus,
-.footer__tel:focus {
-  color: #2196f3;
-  transition: var(--animation);
 }

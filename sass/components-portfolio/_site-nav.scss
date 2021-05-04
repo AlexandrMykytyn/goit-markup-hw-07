@@ -14,12 +14,12 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: var(--animation);
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
-  transition: var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: var(--animation);
+  }
 }
 
 .current {

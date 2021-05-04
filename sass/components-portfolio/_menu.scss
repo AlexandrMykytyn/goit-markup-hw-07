@@ -1,17 +1,17 @@
 .menu__link {
   position: relative;
-}
 
-.menu__link .link__mail-icons {
-  fill: var(--secondary-text-color);
-  margin-right: 10px;
-  transition: var(--animation);
-}
+  & .link__mail-icons {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+    transition: var(--animation);
+  }
 
-.menu__link:not(:last-child) {
-  margin-right: 50px;
-}
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 
-.menu__link:nth-child(3n) {
-  margin-right: 331px;
+  &:nth-child(3n) {
+    margin-right: 331px;
+  }
 }

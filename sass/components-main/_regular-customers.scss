@@ -1,23 +1,17 @@
-.regular-customers__container {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .regular-customers {
   display: block;
   text-align: center;
+
+  &__container {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section__icons {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.menu__icons:hover,
-.menu__icons:focus {
-  border-color: #2196f3;
-  fill: #2196f3;
 }
 
 .icons__link {
@@ -36,6 +30,12 @@
   cursor: pointer;
 
   transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    fill: #2196f3;
+  }
 }
 
 .menu__icons:not(:last-child) {
